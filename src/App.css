@@ -1,38 +1,205 @@
-.App {
+.header{
   text-align: center;
+  color:orange;
+  font-size:20px;
+  border-radius:2px;
+  box-shadow:5px 10px 10px;
+  background-color:rgba(0, 0, 0, 0.783);
+  height:70px; 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background-color:rgb(59, 54, 54);
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards-container{
+  display:flex;
+  flex-wrap:wrap;
+  padding:8px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cards{
+  background-color: grey;
+  border-radius:4px;
+  width:100%;
+  max-width:180px;
+  margin:5px;
+  box-shadow: 5px 5px 5px;
+}
+.cards img{
+ 
+  width: 100%;
+  height: auto; 
+  border-radius: 2px;
+  max-width: 100%;
+ 
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer; 
+  font-size:1.5rem;
+  color:black;
+  border-radius: 2px;
+}
+.pagination-container{
+  margin:4px;
+  padding-left: 12px;
+  padding-bottom: 4px;
+  font-size:1.25rem;
+}
+.pagination-container span{
+  margin:2px;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination-container div span{
+  background-color:gray;
+  padding:2px;
+  margin:2px;
+  cursor:pointer;
+}
+.pagination-container div span:hover{
+  background-color:rgb(57, 51, 51)
+}
+.d2{
+  text-align:center;
+  margin:8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pagination-array{
+  border-radius: 2px;
+  border-color:black;
+  overflow-x: scroll;
+}
+
+.profile-container{
+  text-align:center;
+  background-color: rgba(0, 0, 0, 0.804);
+  border-radius:4px;
+  margin:5px;
+  box-shadow: 5px 5px 5px;
+}
+.profile-container img{
+  margin:20px;
+  box-shadow: 5px 5px 5px;
+  border-radius:20px;
+  border-color:blanchedalmond
+}
+.profile-container p{
+  font-weight: bold ;
+  font-size:20px;
+  color: orange
+}
+.list-container {
+  display:flex;
+  font-weight:bold;
+  font-size:15px;
+  margin:30px;
+  justify-content:space-between;
+  margin:4px;
+}
+.episode-detail p{
+  color:chartreuse;
+  
+}
+.episode-detail li{
+  list-style-type:decimal;
+  color:blueviolet;
+  font-weight:bold;
+  font-size:28px;
+}
+.location-detail p{
+  color:fuchsia
+}
+
+.list-container span{
+  margin:2px;
+}
+.search-bar{
+  display:flex;
+  margin:10px;
+}
+.search-bar input{
+  margin:4px;
+  border-radius:4px;
+  max-height:1.5rem;
+  
+}
+.search-bar button{
+  border-radius:4px;
+  background-color: black;
+  color:yellow;
+}
+.filter-form{
+  display:flex;
+  flex-wrap:wrap;
+  padding:10px;
+  font-weight:bold;
+  font-size:20px;
+  align-items:center;
+  background-color:darkgray
+}
+.filter-form input{
+  margin:8px;
+  border:solid 1.5px;
+  border-radius:5px;
+  padding:2px;
+}
+.filter-button{
+  background-color:darkgray;
+  justify-content:center;
+  align-items:cente;
+  display:flex;
+  padding:10px;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .cards img {
+    width: 100%;
+  }
+
+  .list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-form {
+    flex-direction: column;
+    align-items: center;
   }
 }
+@media screen and (max-width: 411px) {
+  .cards {
+    max-width: 100%;
+  }
+
+  .cards img {
+    width: 100%;
+  }
+
+  .list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+

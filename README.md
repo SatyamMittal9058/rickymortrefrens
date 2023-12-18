@@ -1,3 +1,23 @@
+App created using npx create react app
+Use react-router-dom and react-router for navigating
+Used usestate hook for change the state of the hook
+Also used other like useEffect and useParams
+Used css for styling the application
+implemented the code in the structured way
+implement the feature of search by name
+implement the feature of filter on given parameters like location, episode,status,gender,type,species
+implement the feature of charater display in cards
+implement the feature of character feature in episode
+implement the feature of current location
+implement the feature of individual character information in episode
+ 
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
