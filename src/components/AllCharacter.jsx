@@ -100,7 +100,7 @@ const AllCharacter = () => {
   }, [totalPage])
 
 
-  return (
+  return characters.length===0?<h1>Please wait while Loading</h1>:(
     <div>
       <div className="search-bar">
         <input type="text" placeholder="Search by Name" value={searchText} onChange={(e) => setSearchText(e.target.value)} />
